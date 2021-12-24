@@ -92,7 +92,6 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px auto;
-    margin: 20px;
 }
 
 .main-port-card{
@@ -123,6 +122,27 @@ header nav ul li a {
     background: #EBEFF7;    
 }
 
+.contact {
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.contact p {
+    border-left: 4px solid var(--accent-color);
+    padding: 20px;
+}
+
+.contact h2 {
+    text-align: right;
+    padding: 20px;
+
+}
 
 
 
