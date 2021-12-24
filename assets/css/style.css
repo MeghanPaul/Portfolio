@@ -1,0 +1,128 @@
+:root {
+    --main-text-color: #FC9E4F;
+    --header-background-color: #F5F4F5;
+    --main-background-color: #f5f4f5;
+    --accent-color: #68B8CA;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+header {
+    color: var(--main-text-color);
+    background-color: var(--header-background-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    border: ;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.55vw;
+    color: var(--main-text-color);
+}
+
+.hero {
+    background-color: var(--main-background-color);
+    color:var(--main-text-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+.hero-text {
+    width: 40%;
+    text-align: right;
+    margin: 3.5%;
+    font-size: 18px;
+    line-height: 1.2;
+    border-right: 4px solid var(--accent-color);
+    padding: 20px;
+}
+
+.hero-img {
+
+}
+
+.portfolio {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    font-size: 18px;
+}
+
+.portfolio h2 {
+    text-align: center;
+}
+
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px auto;
+    margin: 20px;
+}
+
+.main-port-card{
+    display: flex;
+    flex: 0 80%;
+    padding: 20px auto;
+    justify-content: center;
+    height: 500px;
+    width: 80%;
+}
+
+.port-row img{
+    margin: 20px;
+    height: 400px;
+}
+
+.main-port-card a {
+    display: flex;
+    padding: 20px auto;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+}
+
+.main-port-card img:hover {
+    opacity: 1;
+    transition: opacity 1s, background 1s;
+    background: #EBEFF7;    
+}
+
+
+
+
