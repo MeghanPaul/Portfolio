@@ -26,6 +26,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 9999;
 }
 
 header h1 {
@@ -88,74 +89,76 @@ header nav ul li a {
 }
 
 .portfolio-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px auto;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+
+/*Main Portfolio Image and Overlay Start*/
 .main-port-card{
-    display: flex;
     flex: 0 80%;
     padding: 20px auto;
-    justify-content: center;
-    height: 500px;
-    width: 80%;
+
+}
+
+.main-port-card a {
+    padding: 20px auto;
+    width: 100%;
+
+}
+
+.main-port-card a img {
+    width: 100%;
+    height: auto;
+
+}
+/*Main Portfolio Image and Overlay End*/
+
+.port-row {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .port-row img{
     margin: 20px;
-    height: 400px;
+    width: 90%;
 }
 
-.main-port-card a {
-    display: flex;
-    padding: 20px auto;
-    justify-content: center;
-    height: 500px;
-    width: 100%;
-}
-
-.main-port-card img:hover {
-    opacity: 1;
-    transition: opacity 1s, background 1s;
-    background: #EBEFF7;    
-}
-
-/*
-
-.container {
-    position: relative;
-    width: 50%;
-    max-width: 300px;
-}
-
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
+/*Overlay Style Start*/
+.overlay-container {
+    width: 80%;
 }
 
 .overlay {
-    position: absolute;
+    position: relative;
+    top: 0;
     bottom: 0;
-    background: rgba(0,0,0);
-    background: rgba(0,0,0,.5);
-    color: #f1f1f1;
+    left: 0;
+    right: 0;
+    height: 100%;
     width: 100%;
-    transition: .2s ease;
     opacity: 0;
-    color: white; 
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,.5);
 }
 
-.container:hover .overlay {
+.overlay-container:hover .overlay {
     opacity: 1;
 }
 
-*/
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+/*Overlay Style End*/
+
 .contact {
     color: var(--main-text-color);
     background-color: var(--main-background-color);
