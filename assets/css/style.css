@@ -37,11 +37,12 @@ header h1 {
     font-weight: bold;
     font-size: 42px;
     margin: 0;
-    border: ;
+    padding-left: 25px;
 }
 
 header nav {
     margin: 7px 0;
+    width: 22%;
 }
 
 header nav ul {
@@ -55,7 +56,7 @@ header nav ul {
 header nav ul li a {
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 1.7vw;
+    font-size: 26px;
     color: var(--main-text-color);
 }
 
@@ -213,7 +214,7 @@ header nav ul li a {
 .contact {
     color: var(--main-text-color);
     background-color: var(--main-background-color);
-    font-size: 1.7vw;
+    font-size: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
