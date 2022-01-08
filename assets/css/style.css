@@ -79,10 +79,13 @@ header nav ul li a {
 }
 
 .hero-img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
+    object-position: 50% 50%;
     border-radius: var(--img-radius);
+    margin: auto 10px;
+    
 }
 
 .portfolio {
@@ -253,7 +256,7 @@ header nav ul li a {
 }
 
 /*Media Query for Tablets and Smaller*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 855px) {
     /*Applied to any screen between 768px and 575px*/
     .section-title {
         font-size: 5vw;
@@ -306,6 +309,7 @@ header nav ul li a {
     .hero-text p {
         padding: 20px;
         text-align: center;
+        font-size: 3vw;
     }
 
     .portfolio h2 {
@@ -346,16 +350,16 @@ header nav ul li a {
 @media screen and (max-width: 575px) {
     /*Applied to any screen smaller than 575px*/
     .section-title {
-        font-size: 7vw;
+        font-size: 5.5vw;
     }
 
     header h1 {
-        font-size: 8vw;
+        font-size: 6.5vw;
         width: 70%;
     }
 
     header nav ul li a {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
 
     .main-port-card {
@@ -379,7 +383,7 @@ header nav ul li a {
     }
 
     .contact p {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 }
 
