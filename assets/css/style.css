@@ -3,6 +3,8 @@
     --header-background-color: #F5F4F5;
     --main-background-color: #f5f4f5;
     --accent-color: #68B8CA;
+
+    --img-radius: 15px;
 }
 
 * {
@@ -78,6 +80,7 @@ header nav ul li a {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border-radius: var(--img-radius);
 }
 
 .portfolio {
@@ -88,6 +91,10 @@ header nav ul li a {
 
 .portfolio h2 {
     text-align: center;
+    border-bottom: 4px solid var(--accent-color);
+    width: 20%;
+    margin: 0 auto;
+    padding-bottom: 5px;
 }
 
 .portfolio-cards {
@@ -99,6 +106,7 @@ header nav ul li a {
 /*Main Portfolio Image and Overlay Start*/
 .main-port-card{
     display: flex;
+    justify-content: center;
     flex: 0 80%;
     padding: 20px auto;
 
@@ -106,21 +114,23 @@ header nav ul li a {
 
 .main-port-card a {
     padding: 20px auto;
-    width: 100%;
+    width: 80%;
 
 }
 
 .main-port-card a img {
     width: 100%;
     height: auto;
-
+    border-radius: var(--img-radius);
 }
 /*Main Portfolio Image and Overlay End*/
 
 .port-row {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    width: 88%;
+    margin: 20px auto;
 }
 
 .small-port-card{
@@ -130,11 +140,14 @@ header nav ul li a {
 }
 
 .small-port-card a {
+    width: 80%;
     margin: auto;
 }
 
 .small-port-card a img {
+    width: 100%;
     margin: auto;
+    border-radius: var(--img-radius);
 }
 
 .contact {
