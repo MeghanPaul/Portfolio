@@ -160,10 +160,16 @@ header nav ul li a {
     opacity: 1;
 }
 
-.overlay-hyperlink {
+.main-overlay-hyperlink {
     position: absolute;
     width: 80%;
     height: var(--main-img-height);
+}
+
+.small-overlay-hyperlink {
+    position: absolute;
+    width: 80%;
+    height: var(--small-img-height);
 }
 
 .text {
